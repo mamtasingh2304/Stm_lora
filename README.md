@@ -1,6 +1,6 @@
 # Stm_lora
 in this project STM32 interface with Lora. lora point to point implement along with that mqtt also implemented on stm 
-LoRa Module : -  Working on Point to Point Single Frequency. Both Gateway and Nodes  are tuned on that  frequency to communicate. Working in receiver mode to receive the data from the nodes in the farms.
+LoRa Module : -  Working on Point to Point Single Frequency. Both Gateway and Nodes  are tuned on that  frequency to communicate. Working in receiver mode to receive the data from the nodes.
 
       4.   STM 32  :-                  32 - bit Microcontroller 
                                                 Vendor :ST 
