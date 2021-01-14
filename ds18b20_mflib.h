@@ -1,17 +1,4 @@
-/* 	ds18b20_mfib.h -- H header file for handling the 1-wire DS18B20 digital thermometer
- *
- *  Created on: 	4.01.2017
- *  Author: 			Marek Frydrysiak <marek.frydrysiak@gmail.com>
- *	Description:
- *			Include the appropriate hal lib and select the 1-wire signal line port and pin.
- *			For more information, see the .c file!
- *
- * 	Copyright (C) 2017 Marek Frydrysiak
- *
- * 	This software may be modified and distributed under the terms
- * 	of the MIT license.  See the LICENSE file for details.
- *
- */
+
 
 #ifndef _DS18B20_MFLIB_H_
 #define _DS18B20_MFLIB_H_
