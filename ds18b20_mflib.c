@@ -1,45 +1,4 @@
-/* 	ds18b20_mfib.c -- C source file for handling the 1-wire DS18B20 digital thermometer
- *
- *  Created on: 	4.01.2017
- *  Author: 			Marek Frydrysiak <marek.frydrysiak@gmail.com>
- *	Description:
- *			
- *			This C source file provides very basic functionalities for controlling
- *			the DS18B20 digital thermometer. So far it handles only one device.
- *
- *			In order to read the temperature measurement, the following sequence of
- *			functions must be applied:
- *
- *				ds18b20_init_seq();
- *				ds18b20_send_rom_cmd(SKIP_ROM_CMD_BYTE);
- *				ds18b20_send_function_cmd(CONVERT_T_CMD);
- *
- *				delay_us(100);
- *
- *				ds18b20_init_seq();
- *				ds18b20_send_rom_cmd(SKIP_ROM_CMD_BYTE);
- *				ds18b20_send_function_cmd(READ_SCRATCHPAD_CMD);
- *				temp_f = ds18b20_read_temp();	// returns float value
- *
- *			User can adapt the delay_us function in a way she/he likes. In this case 
- *			the time_us variable is decremented in SysTick handler every 1us. This is 
- *			obviously wasting of uC resources, but timings must be obey.
- *
- *			This code is prepared to work with the HAL STM32 libraries. The only thing
- *			the user is obliged to do, except the time_us variable, is to edit the .h file,
- *			i.e. to define 1-wire signal PIN and PORT and to include appropriate HAL 
- *			header file.
- *
- *			1-wire signal line should be pulled-up to VCC of the device with a 4.7k resistor.
- *			Moreover, the signal line PIO should be configured in the output open-drain mode.
- *
- *
- * 	Copyright (C) 2017 Marek Frydrysiak
- *
- * 	This software may be modified and distributed under the terms
- * 	of the MIT license.  See the LICENSE file for details.
- *
- */
+
 
 #include "ds18b20_mflib.h"
 
